@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1189999060/es/vector/ilustraci%C3%B3n-de-stock-de-animal-paw-seamless-pattern.jpg?s=612x612&w=0&k=20&c=cG5fdowCDCOVY10Lf1DEOdeTwkEm4lygRCaczZ_bjNo=');
+    background-size: 150px;
+    background-repeat: repeat;
+    animation: moverFondo 30s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+    margin: 0;
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
+.container {
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+input,
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    background-color: #fafafa;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #a5d6a7;
+    color: #1b5e20;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #81c784;
+}
+
+.pet-image {
+    display: block;
+    margin: 30px auto 0;
+    max-width: 100%;
+    border-radius: 10px;
+}
